@@ -1,0 +1,1213 @@
+[14-Jan-2026 08:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:00:01 Asia/Kolkata] Schedule ID: 60
+[14-Jan-2026 08:00:01 Asia/Kolkata] Total Recipients: 3
+[14-Jan-2026 08:00:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:00:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:00:01 Asia/Kolkata] Processing: 0 to 3
+[14-Jan-2026 08:00:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:00:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 08:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:00:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:00:01 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:00:07 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 08:00:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA00106
+[14-Jan-2026 08:00:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:00:07 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:07 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:00:07 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 08:00:07 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:00:12 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 08:00:12 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[14-Jan-2026 08:00:12 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:00:12 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:12 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:00:12 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:00:12 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:00:13 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:00:16 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[14-Jan-2026 08:00:17 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:00:17 Asia/Kolkata] Schedule 60: All 3 emails sent successfully!
+[14-Jan-2026 08:00:17 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:00:17 Asia/Kolkata] Next send: 2026-01-15 08:00:00
+[14-Jan-2026 08:00:19 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:00:19 Asia/Kolkata] Schedule ID: 61
+[14-Jan-2026 08:00:19 Asia/Kolkata] Total Recipients: 1
+[14-Jan-2026 08:00:19 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:00:19 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:00:19 Asia/Kolkata] Processing: 0 to 1
+[14-Jan-2026 08:00:19 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:00:19 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 08:00:19 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:00:19 Asia/Kolkata] Input reportType: GROUP_REPORT
+[14-Jan-2026 08:00:19 Asia/Kolkata] Converted spReportType: GROUP_REPORT
+[14-Jan-2026 08:00:19 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:00:19 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:00:19 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:00:25 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 08:00:25 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:00:25 Asia/Kolkata] Schedule 61: All 1 emails sent successfully!
+[14-Jan-2026 08:00:25 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:00:25 Asia/Kolkata] Next send: 2026-01-15 08:00:00
+[14-Jan-2026 08:03:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:03:01 Asia/Kolkata] Schedule ID: 52
+[14-Jan-2026 08:03:01 Asia/Kolkata] Total Recipients: 3
+[14-Jan-2026 08:03:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:03:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:03:01 Asia/Kolkata] Processing: 0 to 3
+[14-Jan-2026 08:03:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:03:01 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: GA00106
+[14-Jan-2026 08:03:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:01 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 08:03:02 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:07 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[14-Jan-2026 08:03:08 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: ADMIN
+[14-Jan-2026 08:03:08 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:08 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:08 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:08 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:08 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:03:08 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:14 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[14-Jan-2026 08:03:15 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: ADMIN
+[14-Jan-2026 08:03:15 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:15 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:15 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:15 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:15 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:03:15 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:19 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[14-Jan-2026 08:03:19 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:03:19 Asia/Kolkata] Schedule 52: All 3 emails sent successfully!
+[14-Jan-2026 08:03:19 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:03:19 Asia/Kolkata] Next send: 2026-01-15 10:00:00
+[14-Jan-2026 08:03:21 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:03:21 Asia/Kolkata] Schedule ID: 53
+[14-Jan-2026 08:03:21 Asia/Kolkata] Total Recipients: 1
+[14-Jan-2026 08:03:21 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:03:21 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:03:21 Asia/Kolkata] Processing: 0 to 1
+[14-Jan-2026 08:03:21 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:03:21 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: ADMIN
+[14-Jan-2026 08:03:21 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:21 Asia/Kolkata] Input reportType: GROUP_REPORT
+[14-Jan-2026 08:03:21 Asia/Kolkata] Converted spReportType: GROUP_REPORT
+[14-Jan-2026 08:03:21 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:21 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:03:22 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:27 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[14-Jan-2026 08:03:27 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:03:27 Asia/Kolkata] Schedule 53: All 1 emails sent successfully!
+[14-Jan-2026 08:03:27 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:03:27 Asia/Kolkata] Next send: 2026-01-15 10:00:00
+[14-Jan-2026 08:03:29 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:03:29 Asia/Kolkata] Schedule ID: 59
+[14-Jan-2026 08:03:29 Asia/Kolkata] Total Recipients: 2
+[14-Jan-2026 08:03:29 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:03:29 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:03:29 Asia/Kolkata] Processing: 0 to 2
+[14-Jan-2026 08:03:29 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:03:29 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 08:03:29 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:29 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:29 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:29 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:29 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:03:30 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:33 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 08:03:34 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: ADMIN
+[14-Jan-2026 08:03:34 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:34 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:34 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 08:03:34 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:34 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 08:03:34 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 08:03:37 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[14-Jan-2026 08:03:38 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:03:38 Asia/Kolkata] Schedule 59: All 2 emails sent successfully!
+[14-Jan-2026 08:03:38 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:03:38 Asia/Kolkata] Next send: 2026-01-15 17:03:00
+[14-Jan-2026 08:03:40 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:03:40 Asia/Kolkata] Schedule ID: 58
+[14-Jan-2026 08:03:40 Asia/Kolkata] Total Recipients: 1
+[14-Jan-2026 08:03:40 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:03:40 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:03:40 Asia/Kolkata] Processing: 0 to 1
+[14-Jan-2026 08:03:40 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:03:40 Asia/Kolkata] Processing email for: max.williams@globalhealthcareresource.com with empid: GA00230
+[14-Jan-2026 08:03:40 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:40 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[14-Jan-2026 08:03:40 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[14-Jan-2026 08:03:40 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:40 Asia/Kolkata] Employee ID (userid): GA00230
+[14-Jan-2026 08:03:40 Asia/Kolkata] Stored procedure returned 142 rows
+[14-Jan-2026 08:03:41 Asia/Kolkata] Email sent successfully to: max.williams@globalhealthcareresource.com
+[14-Jan-2026 08:03:42 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:03:42 Asia/Kolkata] Schedule 58: All 1 emails sent successfully!
+[14-Jan-2026 08:03:42 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:03:42 Asia/Kolkata] Next send: 2026-01-15 18:38:00
+[14-Jan-2026 08:03:44 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 08:03:44 Asia/Kolkata] Schedule ID: 55
+[14-Jan-2026 08:03:44 Asia/Kolkata] Total Recipients: 1
+[14-Jan-2026 08:03:44 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 08:03:44 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 08:03:44 Asia/Kolkata] Processing: 0 to 1
+[14-Jan-2026 08:03:44 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 08:03:44 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: GA00108
+[14-Jan-2026 08:03:44 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 08:03:44 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[14-Jan-2026 08:03:44 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[14-Jan-2026 08:03:44 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 08:03:44 Asia/Kolkata] Employee ID (userid): GA00108
+[14-Jan-2026 08:03:44 Asia/Kolkata] Stored procedure returned 324 rows
+[14-Jan-2026 08:03:46 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[14-Jan-2026 08:03:46 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 08:03:46 Asia/Kolkata] Schedule 55: All 1 emails sent successfully!
+[14-Jan-2026 08:03:46 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 08:03:46 Asia/Kolkata] Next send: 2026-01-15 18:39:35
+[14-Jan-2026 09:02:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 09:02:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(126): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 09:03:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 09:03:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(126): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 09:04:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 09:04:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 09:04:01 Asia/Kolkata] Schedule ID: 60
+[14-Jan-2026 09:04:01 Asia/Kolkata] Total Recipients: 3
+[14-Jan-2026 09:04:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 09:04:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 09:04:01 Asia/Kolkata] Processing: 0 to 3
+[14-Jan-2026 09:04:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 09:04:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 09:04:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:04:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:04:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:04:01 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:04:06 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:04:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA00106
+[14-Jan-2026 09:04:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:04:07 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:07 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:04:07 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 09:04:07 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:04:12 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:04:13 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[14-Jan-2026 09:04:13 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:04:13 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:13 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:04:13 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:04:13 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:04:13 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:04:17 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[14-Jan-2026 09:04:17 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 09:04:17 Asia/Kolkata] Schedule 60: All 3 emails sent successfully!
+[14-Jan-2026 09:04:17 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 09:04:17 Asia/Kolkata] Next send: 2026-01-15 09:04:00
+[14-Jan-2026 09:11:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 09:11:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 09:12:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 09:12:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 09:12:01 Asia/Kolkata] Schedule ID: 60
+[14-Jan-2026 09:12:01 Asia/Kolkata] Total Recipients: 3
+[14-Jan-2026 09:12:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 09:12:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 09:12:01 Asia/Kolkata] Processing: 0 to 3
+[14-Jan-2026 09:12:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 09:12:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 09:12:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:12:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:12:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:12:01 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:12:06 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:12:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA00106
+[14-Jan-2026 09:12:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:12:07 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:07 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:12:07 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 09:12:07 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:12:10 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:12:11 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[14-Jan-2026 09:12:11 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:12:11 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:11 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:12:11 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:12:11 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:12:11 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:12:14 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[14-Jan-2026 09:12:15 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 09:12:15 Asia/Kolkata] Schedule 60: All 3 emails sent successfully!
+[14-Jan-2026 09:12:15 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 09:12:15 Asia/Kolkata] Next send: 2026-01-15 09:11:00
+[14-Jan-2026 09:13:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 09:13:01 Asia/Kolkata] Schedule ID: 60
+[14-Jan-2026 09:13:01 Asia/Kolkata] Total Recipients: 3
+[14-Jan-2026 09:13:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 09:13:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 09:13:01 Asia/Kolkata] Processing: 0 to 3
+[14-Jan-2026 09:13:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 09:13:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[14-Jan-2026 09:13:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:13:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:13:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:13:01 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:13:05 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:13:05 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA00106
+[14-Jan-2026 09:13:05 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:13:05 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:05 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:05 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:13:05 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 09:13:06 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:13:09 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[14-Jan-2026 09:13:10 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[14-Jan-2026 09:13:10 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:13:10 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:10 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:13:10 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:13:10 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:13:10 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:13:14 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[14-Jan-2026 09:13:14 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 09:13:14 Asia/Kolkata] Schedule 60: All 3 emails sent successfully!
+[14-Jan-2026 09:13:14 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 09:13:14 Asia/Kolkata] Next send: 2026-01-15 09:13:00
+[14-Jan-2026 09:50:01 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 09:50:01 Asia/Kolkata] Schedule ID: 62
+[14-Jan-2026 09:50:01 Asia/Kolkata] Total Recipients: 2
+[14-Jan-2026 09:50:01 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 09:50:01 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 09:50:01 Asia/Kolkata] Processing: 0 to 2
+[14-Jan-2026 09:50:01 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 09:50:01 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[14-Jan-2026 09:50:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:50:01 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:50:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:50:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:50:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:50:02 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:50:07 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[14-Jan-2026 09:50:08 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: GA00106
+[14-Jan-2026 09:50:08 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:50:08 Asia/Kolkata] Input reportType: SUMMARY_REPORT
+[14-Jan-2026 09:50:08 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[14-Jan-2026 09:50:08 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:50:08 Asia/Kolkata] Employee ID (userid): GA00106
+[14-Jan-2026 09:50:08 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:50:13 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[14-Jan-2026 09:50:14 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 09:50:14 Asia/Kolkata] Schedule 62: All 2 emails sent successfully!
+[14-Jan-2026 09:50:14 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 09:50:14 Asia/Kolkata] Next send: 2026-01-15 09:50:00
+[14-Jan-2026 09:50:16 Asia/Kolkata] === BATCH PROCESSING ===
+[14-Jan-2026 09:50:16 Asia/Kolkata] Schedule ID: 63
+[14-Jan-2026 09:50:16 Asia/Kolkata] Total Recipients: 1
+[14-Jan-2026 09:50:16 Asia/Kolkata] Batch Size: 50
+[14-Jan-2026 09:50:16 Asia/Kolkata] Current Offset: 0
+[14-Jan-2026 09:50:16 Asia/Kolkata] Processing: 0 to 1
+[14-Jan-2026 09:50:16 Asia/Kolkata] Remaining after this batch: 0
+[14-Jan-2026 09:50:16 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[14-Jan-2026 09:50:16 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[14-Jan-2026 09:50:16 Asia/Kolkata] Input reportType: GROUP_REPORT
+[14-Jan-2026 09:50:16 Asia/Kolkata] Converted spReportType: GROUP_REPORT
+[14-Jan-2026 09:50:16 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-14
+[14-Jan-2026 09:50:16 Asia/Kolkata] Employee ID (userid): ADMIN
+[14-Jan-2026 09:50:16 Asia/Kolkata] Stored procedure returned 27906 rows
+[14-Jan-2026 09:50:21 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[14-Jan-2026 09:50:22 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[14-Jan-2026 09:50:22 Asia/Kolkata] Schedule 63: All 1 emails sent successfully!
+[14-Jan-2026 09:50:22 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[14-Jan-2026 09:50:22 Asia/Kolkata] Next send: 2026-01-15 09:50:00
+[14-Jan-2026 10:00:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:00:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:00:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:00:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:01:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:01:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:01:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:01:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:02:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:02:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:02:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:02:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:03:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:03:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:03:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:03:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:04:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:04:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:04:04 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:04:04 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:05:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:05:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:05:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:05:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:06:01 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:06:01 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:06:03 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:06:03 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:07:10 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:07:10 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[14-Jan-2026 10:07:12 Asia/Kolkata] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[14-Jan-2026 10:07:12 Asia/Kolkata] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php:1410
+Stack trace:
+#0 /var/www/html/api/send_report_email.php(127): PHPMailer\PHPMailer\PHPMailer->setFrom()
+#1 {main}
+  thrown in /var/www/html/api/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1410
+[23-Jan-2026 07:31:56 UTC] Auto-reset 1 stuck schedules from 'sending' to 'idle' (timeout: 10 minutes)
+[23-Jan-2026 07:31:56 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/api/send_report_email.php on line 33
+[23-Jan-2026 07:31:56 UTC] === BATCH PROCESSING ===
+[23-Jan-2026 07:31:56 UTC] Schedule ID: 66
+[23-Jan-2026 07:31:56 UTC] Total Recipients: 1
+[23-Jan-2026 07:31:56 UTC] Batch Size: 50
+[23-Jan-2026 07:31:56 UTC] Current Offset: 0
+[23-Jan-2026 07:31:56 UTC] Processing: 0 to 1
+[23-Jan-2026 07:31:56 UTC] Remaining after this batch: 0
+[23-Jan-2026 07:31:56 UTC] Processing email for: sabareeswaran.n26@gmail.com with empid: GA00106
+[23-Jan-2026 07:31:56 UTC] === STORED PROCEDURE CALL ===
+[23-Jan-2026 07:31:56 UTC] Input reportType: GROUP_REPORT
+[23-Jan-2026 07:31:56 UTC] Converted spReportType: GROUP_REPORT
+[23-Jan-2026 07:31:56 UTC] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 07:31:56 UTC] Employee ID (userid): GA00106
+[23-Jan-2026 07:31:57 UTC] Stored procedure returned 46520 rows
+[23-Jan-2026 07:32:07 UTC] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 14:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 14:00:01 Asia/Kolkata] Schedule ID: 64
+[23-Jan-2026 14:00:01 Asia/Kolkata] Total Recipients: 4
+[23-Jan-2026 14:00:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 14:00:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 14:00:01 Asia/Kolkata] Processing: 0 to 4
+[23-Jan-2026 14:00:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 14:00:01 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: ADMIN
+[23-Jan-2026 14:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 14:00:02 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 14:00:20 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[23-Jan-2026 14:00:21 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: GA00004
+[23-Jan-2026 14:00:21 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:00:21 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:21 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:21 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:00:21 Asia/Kolkata] Employee ID (userid): GA00004
+[23-Jan-2026 14:00:22 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 14:00:33 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[23-Jan-2026 14:00:33 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: GA00106
+[23-Jan-2026 14:00:33 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:00:33 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:33 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:33 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:00:33 Asia/Kolkata] Employee ID (userid): GA00106
+[23-Jan-2026 14:00:34 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 14:00:50 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[23-Jan-2026 14:00:51 Asia/Kolkata] Processing email for: austin@globalhealthcareresource.com with empid: GA00135
+[23-Jan-2026 14:00:51 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:00:51 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:51 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:00:51 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:00:51 Asia/Kolkata] Employee ID (userid): GA00135
+[23-Jan-2026 14:00:51 Asia/Kolkata] Stored procedure returned 354 rows
+[23-Jan-2026 14:00:53 Asia/Kolkata] Email sent successfully to: austin@globalhealthcareresource.com
+[23-Jan-2026 14:00:54 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 14:00:54 Asia/Kolkata] Schedule 64: All 4 emails sent successfully!
+[23-Jan-2026 14:00:54 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 14:00:54 Asia/Kolkata] Next send: 2026-01-24 10:00:00
+[23-Jan-2026 14:02:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 14:02:01 Asia/Kolkata] Schedule ID: 67
+[23-Jan-2026 14:02:01 Asia/Kolkata] Total Recipients: 1
+[23-Jan-2026 14:02:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 14:02:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 14:02:01 Asia/Kolkata] Processing: 0 to 1
+[23-Jan-2026 14:02:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 14:02:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA01277
+[23-Jan-2026 14:02:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:02:01 Asia/Kolkata] Input reportType: GROUP_REPORT
+[23-Jan-2026 14:02:01 Asia/Kolkata] Converted spReportType: GROUP_REPORT
+[23-Jan-2026 14:02:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:02:01 Asia/Kolkata] Employee ID (userid): GA01277
+[23-Jan-2026 14:02:01 Asia/Kolkata] Stored procedure returned 296 rows
+[23-Jan-2026 14:02:03 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 14:02:03 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 14:02:03 Asia/Kolkata] Schedule 67: All 1 emails sent successfully!
+[23-Jan-2026 14:02:03 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 14:02:03 Asia/Kolkata] Next send: 2026-01-24 14:01:32
+[23-Jan-2026 14:12:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 14:12:01 Asia/Kolkata] Schedule ID: 68
+[23-Jan-2026 14:12:01 Asia/Kolkata] Total Recipients: 1
+[23-Jan-2026 14:12:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 14:12:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 14:12:01 Asia/Kolkata] Processing: 0 to 1
+[23-Jan-2026 14:12:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 14:12:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[23-Jan-2026 14:12:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:12:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:12:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:12:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:12:01 Asia/Kolkata] Employee ID (userid): GA00108
+[23-Jan-2026 14:12:01 Asia/Kolkata] Stored procedure returned 537 rows
+[23-Jan-2026 14:12:03 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 14:12:04 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 14:12:04 Asia/Kolkata] Schedule 68: All 1 emails sent successfully!
+[23-Jan-2026 14:12:04 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 14:12:04 Asia/Kolkata] Next send: 2026-01-24 14:12:00
+[23-Jan-2026 14:13:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 14:13:01 Asia/Kolkata] Schedule ID: 68
+[23-Jan-2026 14:13:01 Asia/Kolkata] Total Recipients: 2
+[23-Jan-2026 14:13:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 14:13:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 14:13:01 Asia/Kolkata] Processing: 0 to 2
+[23-Jan-2026 14:13:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 14:13:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[23-Jan-2026 14:13:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:13:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:13:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:13:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:13:01 Asia/Kolkata] Employee ID (userid): GA00108
+[23-Jan-2026 14:13:01 Asia/Kolkata] Stored procedure returned 537 rows
+[23-Jan-2026 14:13:04 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 14:13:04 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA01277
+[23-Jan-2026 14:13:04 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:13:04 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:13:04 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:13:04 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:13:04 Asia/Kolkata] Employee ID (userid): GA01277
+[23-Jan-2026 14:13:05 Asia/Kolkata] Stored procedure returned 296 rows
+[23-Jan-2026 14:13:06 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 14:13:06 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 14:13:06 Asia/Kolkata] Schedule 68: All 2 emails sent successfully!
+[23-Jan-2026 14:13:06 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 14:13:06 Asia/Kolkata] Next send: 2026-01-24 14:13:00
+[23-Jan-2026 14:19:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 14:19:01 Asia/Kolkata] Schedule ID: 68
+[23-Jan-2026 14:19:01 Asia/Kolkata] Total Recipients: 3
+[23-Jan-2026 14:19:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 14:19:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 14:19:01 Asia/Kolkata] Processing: 0 to 3
+[23-Jan-2026 14:19:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 14:19:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[23-Jan-2026 14:19:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:19:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:19:01 Asia/Kolkata] Employee ID (userid): GA00108
+[23-Jan-2026 14:19:01 Asia/Kolkata] Stored procedure returned 537 rows
+[23-Jan-2026 14:19:04 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 14:19:04 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA01277
+[23-Jan-2026 14:19:04 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:19:04 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:04 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:04 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:19:04 Asia/Kolkata] Employee ID (userid): GA01277
+[23-Jan-2026 14:19:05 Asia/Kolkata] Stored procedure returned 296 rows
+[23-Jan-2026 14:19:06 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 14:19:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA18348
+[23-Jan-2026 14:19:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 14:19:07 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:07 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 14:19:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 14:19:07 Asia/Kolkata] Employee ID (userid): GA18348
+[23-Jan-2026 14:19:07 Asia/Kolkata] Stored procedure returned 14 rows
+[23-Jan-2026 14:19:09 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 14:19:09 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 14:19:09 Asia/Kolkata] Schedule 68: All 3 emails sent successfully!
+[23-Jan-2026 14:19:09 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 14:19:09 Asia/Kolkata] Next send: 2026-01-24 14:19:00
+[23-Jan-2026 15:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 15:00:01 Asia/Kolkata] Schedule ID: 70
+[23-Jan-2026 15:00:01 Asia/Kolkata] Total Recipients: 2
+[23-Jan-2026 15:00:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 15:00:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 15:00:01 Asia/Kolkata] Processing: 0 to 2
+[23-Jan-2026 15:00:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 15:00:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GB20623
+[23-Jan-2026 15:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 15:00:01 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 15:00:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 15:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 15:00:01 Asia/Kolkata] Employee ID (userid): GB20623
+[23-Jan-2026 15:00:01 Asia/Kolkata] Stored procedure returned 13 rows
+[23-Jan-2026 15:00:03 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 15:00:04 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: GA00106
+[23-Jan-2026 15:00:04 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 15:00:04 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 15:00:04 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 15:00:04 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 15:00:04 Asia/Kolkata] Employee ID (userid): GA00106
+[23-Jan-2026 15:00:05 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 15:00:07 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[23-Jan-2026 15:00:07 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 15:00:07 Asia/Kolkata] Schedule 70: All 2 emails sent successfully!
+[23-Jan-2026 15:00:07 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 15:00:07 Asia/Kolkata] Next send: 2026-01-24 15:00:00
+[23-Jan-2026 16:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 16:00:01 Asia/Kolkata] Schedule ID: 70
+[23-Jan-2026 16:00:01 Asia/Kolkata] Total Recipients: 9
+[23-Jan-2026 16:00:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 16:00:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 16:00:01 Asia/Kolkata] Processing: 0 to 9
+[23-Jan-2026 16:00:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 16:00:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:01 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:02 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:04 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 16:00:05 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:05 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:05 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:05 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:05 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:05 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:05 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:07 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[23-Jan-2026 16:00:08 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:08 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:08 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:08 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:08 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:08 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:08 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:10 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 16:00:11 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:11 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:11 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:11 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:11 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:11 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:11 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:13 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[23-Jan-2026 16:00:14 Asia/Kolkata] Processing email for: codeguru70@gmail.com with empid: GA00106
+[23-Jan-2026 16:00:14 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:14 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:14 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:14 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:14 Asia/Kolkata] Employee ID (userid): GA00106
+[23-Jan-2026 16:00:14 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:17 Asia/Kolkata] Email sent successfully to: codeguru70@gmail.com
+[23-Jan-2026 16:00:17 Asia/Kolkata] Processing email for: g36656606@gmail.com with empid: GA00106
+[23-Jan-2026 16:00:17 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:17 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:17 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:17 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:17 Asia/Kolkata] Employee ID (userid): GA00106
+[23-Jan-2026 16:00:18 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:20 Asia/Kolkata] Email sent successfully to: g36656606@gmail.com
+[23-Jan-2026 16:00:20 Asia/Kolkata] Processing email for: softbeetechnology@gmail.com with empid: GA00106
+[23-Jan-2026 16:00:20 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:20 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:20 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:20 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:20 Asia/Kolkata] Employee ID (userid): GA00106
+[23-Jan-2026 16:00:21 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:23 Asia/Kolkata] Email sent successfully to: softbeetechnology@gmail.com
+[23-Jan-2026 16:00:23 Asia/Kolkata] Processing email for: sabaree643@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:23 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:23 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:23 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:23 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:23 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:24 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:26 Asia/Kolkata] Email sent successfully to: sabaree643@gmail.com
+[23-Jan-2026 16:00:26 Asia/Kolkata] Processing email for: chandruk254.ck@gmail.com with empid: ADMIN
+[23-Jan-2026 16:00:26 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 16:00:26 Asia/Kolkata] Input reportType: CEO_REPORT
+[23-Jan-2026 16:00:26 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[23-Jan-2026 16:00:26 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 16:00:26 Asia/Kolkata] Employee ID (userid): ADMIN
+[23-Jan-2026 16:00:27 Asia/Kolkata] Stored procedure returned 46520 rows
+[23-Jan-2026 16:00:30 Asia/Kolkata] Email sent successfully to: chandruk254.ck@gmail.com
+[23-Jan-2026 16:00:30 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 16:00:30 Asia/Kolkata] Schedule 70: All 9 emails sent successfully!
+[23-Jan-2026 16:00:30 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 16:00:30 Asia/Kolkata] Next send: 2026-01-24 16:00:00
+[23-Jan-2026 17:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[23-Jan-2026 17:00:01 Asia/Kolkata] Schedule ID: 68
+[23-Jan-2026 17:00:01 Asia/Kolkata] Total Recipients: 3
+[23-Jan-2026 17:00:01 Asia/Kolkata] Batch Size: 50
+[23-Jan-2026 17:00:01 Asia/Kolkata] Current Offset: 0
+[23-Jan-2026 17:00:01 Asia/Kolkata] Processing: 0 to 3
+[23-Jan-2026 17:00:01 Asia/Kolkata] Remaining after this batch: 0
+[23-Jan-2026 17:00:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[23-Jan-2026 17:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 17:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 17:00:01 Asia/Kolkata] Employee ID (userid): GA00108
+[23-Jan-2026 17:00:02 Asia/Kolkata] Stored procedure returned 537 rows
+[23-Jan-2026 17:00:04 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[23-Jan-2026 17:00:04 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA01277
+[23-Jan-2026 17:00:04 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 17:00:04 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:04 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:04 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 17:00:04 Asia/Kolkata] Employee ID (userid): GA01277
+[23-Jan-2026 17:00:05 Asia/Kolkata] Stored procedure returned 296 rows
+[23-Jan-2026 17:00:06 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 17:00:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA18348
+[23-Jan-2026 17:00:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[23-Jan-2026 17:00:07 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:07 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[23-Jan-2026 17:00:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-23
+[23-Jan-2026 17:00:07 Asia/Kolkata] Employee ID (userid): GA18348
+[23-Jan-2026 17:00:07 Asia/Kolkata] Stored procedure returned 14 rows
+[23-Jan-2026 17:00:09 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[23-Jan-2026 17:00:09 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[23-Jan-2026 17:00:09 Asia/Kolkata] Schedule 68: All 3 emails sent successfully!
+[23-Jan-2026 17:00:09 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[23-Jan-2026 17:00:09 Asia/Kolkata] Next send: 2026-01-24 17:00:00
+[24-Jan-2026 08:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[24-Jan-2026 08:00:01 Asia/Kolkata] Schedule ID: 69
+[24-Jan-2026 08:00:01 Asia/Kolkata] Total Recipients: 3
+[24-Jan-2026 08:00:01 Asia/Kolkata] Batch Size: 50
+[24-Jan-2026 08:00:01 Asia/Kolkata] Current Offset: 0
+[24-Jan-2026 08:00:01 Asia/Kolkata] Processing: 0 to 3
+[24-Jan-2026 08:00:01 Asia/Kolkata] Remaining after this batch: 0
+[24-Jan-2026 08:00:01 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[24-Jan-2026 08:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 08:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 08:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 08:00:02 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 08:00:21 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[24-Jan-2026 08:00:22 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: GA14366
+[24-Jan-2026 08:00:22 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 08:00:22 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:22 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:22 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 08:00:22 Asia/Kolkata] Employee ID (userid): GA14366
+[24-Jan-2026 08:00:22 Asia/Kolkata] Stored procedure returned 0 rows
+[24-Jan-2026 08:00:22 Asia/Kolkata] No data returned from stored procedure
+[24-Jan-2026 08:00:22 Asia/Kolkata] No data available for employee: GA14366
+[24-Jan-2026 08:00:22 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: GA00108
+[24-Jan-2026 08:00:22 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 08:00:22 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:22 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 08:00:22 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 08:00:22 Asia/Kolkata] Employee ID (userid): GA00108
+[24-Jan-2026 08:00:23 Asia/Kolkata] Stored procedure returned 638 rows
+[24-Jan-2026 08:00:25 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[24-Jan-2026 08:00:25 Asia/Kolkata] === BATCH COMPLETE ===
+[24-Jan-2026 08:00:25 Asia/Kolkata] Schedule 69: Sent 2 emails in this batch
+[24-Jan-2026 08:00:25 Asia/Kolkata] Progress: 2 of 3 sent (1 remaining)
+[24-Jan-2026 08:00:25 Asia/Kolkata] Status: 'idle' - Will continue in next cron run
+[24-Jan-2026 10:00:02 Asia/Kolkata] === BATCH PROCESSING ===
+[24-Jan-2026 10:00:02 Asia/Kolkata] Schedule ID: 64
+[24-Jan-2026 10:00:02 Asia/Kolkata] Total Recipients: 4
+[24-Jan-2026 10:00:02 Asia/Kolkata] Batch Size: 50
+[24-Jan-2026 10:00:02 Asia/Kolkata] Current Offset: 0
+[24-Jan-2026 10:00:02 Asia/Kolkata] Processing: 0 to 4
+[24-Jan-2026 10:00:02 Asia/Kolkata] Remaining after this batch: 0
+[24-Jan-2026 10:00:02 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: ADMIN
+[24-Jan-2026 10:00:02 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 10:00:02 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:02 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:02 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 10:00:02 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 10:00:03 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 10:00:18 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[24-Jan-2026 10:00:19 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: GA00004
+[24-Jan-2026 10:00:19 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 10:00:19 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:19 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:19 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 10:00:19 Asia/Kolkata] Employee ID (userid): GA00004
+[24-Jan-2026 10:00:20 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 10:00:31 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[24-Jan-2026 10:00:32 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: GA00106
+[24-Jan-2026 10:00:32 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 10:00:32 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:32 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:32 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 10:00:32 Asia/Kolkata] Employee ID (userid): GA00106
+[24-Jan-2026 10:00:33 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 10:00:47 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[24-Jan-2026 10:00:48 Asia/Kolkata] Processing email for: austin@globalhealthcareresource.com with empid: GA00135
+[24-Jan-2026 10:00:48 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 10:00:48 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:48 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 10:00:48 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 10:00:48 Asia/Kolkata] Employee ID (userid): GA00135
+[24-Jan-2026 10:00:49 Asia/Kolkata] Stored procedure returned 409 rows
+[24-Jan-2026 10:00:51 Asia/Kolkata] Email sent successfully to: austin@globalhealthcareresource.com
+[24-Jan-2026 10:00:51 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[24-Jan-2026 10:00:51 Asia/Kolkata] Schedule 64: All 4 emails sent successfully!
+[24-Jan-2026 10:00:51 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[24-Jan-2026 10:00:51 Asia/Kolkata] Next send: 2026-01-25 10:00:00
+[24-Jan-2026 16:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[24-Jan-2026 16:00:01 Asia/Kolkata] Schedule ID: 70
+[24-Jan-2026 16:00:01 Asia/Kolkata] Total Recipients: 9
+[24-Jan-2026 16:00:01 Asia/Kolkata] Batch Size: 50
+[24-Jan-2026 16:00:01 Asia/Kolkata] Current Offset: 0
+[24-Jan-2026 16:00:01 Asia/Kolkata] Processing: 0 to 9
+[24-Jan-2026 16:00:01 Asia/Kolkata] Remaining after this batch: 0
+[24-Jan-2026 16:00:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:01 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:02 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:05 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[24-Jan-2026 16:00:05 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:05 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:05 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:05 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:05 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:05 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:06 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:08 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[24-Jan-2026 16:00:09 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:09 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:09 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:09 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:09 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:09 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:09 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:12 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[24-Jan-2026 16:00:12 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:12 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:12 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:12 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:12 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:12 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:13 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:15 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[24-Jan-2026 16:00:16 Asia/Kolkata] Processing email for: codeguru70@gmail.com with empid: GA00106
+[24-Jan-2026 16:00:16 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:16 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:16 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:16 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:16 Asia/Kolkata] Employee ID (userid): GA00106
+[24-Jan-2026 16:00:16 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:18 Asia/Kolkata] Email sent successfully to: codeguru70@gmail.com
+[24-Jan-2026 16:00:19 Asia/Kolkata] Processing email for: g36656606@gmail.com with empid: GA00106
+[24-Jan-2026 16:00:19 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:19 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:19 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:19 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:19 Asia/Kolkata] Employee ID (userid): GA00106
+[24-Jan-2026 16:00:20 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:22 Asia/Kolkata] Email sent successfully to: g36656606@gmail.com
+[24-Jan-2026 16:00:22 Asia/Kolkata] Processing email for: softbeetechnology@gmail.com with empid: GA00106
+[24-Jan-2026 16:00:22 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:22 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:22 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:22 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:22 Asia/Kolkata] Employee ID (userid): GA00106
+[24-Jan-2026 16:00:23 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:26 Asia/Kolkata] Email sent successfully to: softbeetechnology@gmail.com
+[24-Jan-2026 16:00:26 Asia/Kolkata] Processing email for: sabaree643@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:26 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:26 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:26 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:26 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:26 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:27 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:29 Asia/Kolkata] Email sent successfully to: sabaree643@gmail.com
+[24-Jan-2026 16:00:30 Asia/Kolkata] Processing email for: chandruk254.ck@gmail.com with empid: ADMIN
+[24-Jan-2026 16:00:30 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 16:00:30 Asia/Kolkata] Input reportType: CEO_REPORT
+[24-Jan-2026 16:00:30 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[24-Jan-2026 16:00:30 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 16:00:30 Asia/Kolkata] Employee ID (userid): ADMIN
+[24-Jan-2026 16:00:30 Asia/Kolkata] Stored procedure returned 49363 rows
+[24-Jan-2026 16:00:32 Asia/Kolkata] Email sent successfully to: chandruk254.ck@gmail.com
+[24-Jan-2026 16:00:33 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[24-Jan-2026 16:00:33 Asia/Kolkata] Schedule 70: All 9 emails sent successfully!
+[24-Jan-2026 16:00:33 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[24-Jan-2026 16:00:33 Asia/Kolkata] Next send: 2026-01-25 16:00:00
+[24-Jan-2026 17:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[24-Jan-2026 17:00:01 Asia/Kolkata] Schedule ID: 68
+[24-Jan-2026 17:00:01 Asia/Kolkata] Total Recipients: 3
+[24-Jan-2026 17:00:01 Asia/Kolkata] Batch Size: 50
+[24-Jan-2026 17:00:01 Asia/Kolkata] Current Offset: 0
+[24-Jan-2026 17:00:01 Asia/Kolkata] Processing: 0 to 3
+[24-Jan-2026 17:00:01 Asia/Kolkata] Remaining after this batch: 0
+[24-Jan-2026 17:00:01 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[24-Jan-2026 17:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 17:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 17:00:01 Asia/Kolkata] Employee ID (userid): GA00108
+[24-Jan-2026 17:00:02 Asia/Kolkata] Stored procedure returned 638 rows
+[24-Jan-2026 17:00:04 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[24-Jan-2026 17:00:04 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA01277
+[24-Jan-2026 17:00:04 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 17:00:04 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:04 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:04 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 17:00:04 Asia/Kolkata] Employee ID (userid): GA01277
+[24-Jan-2026 17:00:05 Asia/Kolkata] Stored procedure returned 297 rows
+[24-Jan-2026 17:00:07 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[24-Jan-2026 17:00:07 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA18348
+[24-Jan-2026 17:00:07 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[24-Jan-2026 17:00:07 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:07 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[24-Jan-2026 17:00:07 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-24
+[24-Jan-2026 17:00:07 Asia/Kolkata] Employee ID (userid): GA18348
+[24-Jan-2026 17:00:08 Asia/Kolkata] Stored procedure returned 15 rows
+[24-Jan-2026 17:00:09 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[24-Jan-2026 17:00:10 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[24-Jan-2026 17:00:10 Asia/Kolkata] Schedule 68: All 3 emails sent successfully!
+[24-Jan-2026 17:00:10 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[24-Jan-2026 17:00:10 Asia/Kolkata] Next send: 2026-01-25 17:00:00
+[25-Jan-2026 08:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[25-Jan-2026 08:00:01 Asia/Kolkata] Schedule ID: 69
+[25-Jan-2026 08:00:01 Asia/Kolkata] Total Recipients: 3
+[25-Jan-2026 08:00:01 Asia/Kolkata] Batch Size: 50
+[25-Jan-2026 08:00:01 Asia/Kolkata] Current Offset: 0
+[25-Jan-2026 08:00:01 Asia/Kolkata] Processing: 0 to 3
+[25-Jan-2026 08:00:01 Asia/Kolkata] Remaining after this batch: 0
+[25-Jan-2026 08:00:01 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[25-Jan-2026 08:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 08:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 08:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 08:00:02 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 08:00:18 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[25-Jan-2026 08:00:18 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: GA14366
+[25-Jan-2026 08:00:18 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 08:00:18 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:18 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:18 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 08:00:18 Asia/Kolkata] Employee ID (userid): GA14366
+[25-Jan-2026 08:00:19 Asia/Kolkata] Stored procedure returned 0 rows
+[25-Jan-2026 08:00:19 Asia/Kolkata] No data returned from stored procedure
+[25-Jan-2026 08:00:19 Asia/Kolkata] No data available for employee: GA14366
+[25-Jan-2026 08:00:19 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: GA00108
+[25-Jan-2026 08:00:19 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 08:00:19 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:19 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 08:00:19 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 08:00:19 Asia/Kolkata] Employee ID (userid): GA00108
+[25-Jan-2026 08:00:20 Asia/Kolkata] Stored procedure returned 651 rows
+[25-Jan-2026 08:00:21 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[25-Jan-2026 08:00:22 Asia/Kolkata] === BATCH COMPLETE ===
+[25-Jan-2026 08:00:22 Asia/Kolkata] Schedule 69: Sent 2 emails in this batch
+[25-Jan-2026 08:00:22 Asia/Kolkata] Progress: 2 of 3 sent (1 remaining)
+[25-Jan-2026 08:00:22 Asia/Kolkata] Status: 'idle' - Will continue in next cron run
+[25-Jan-2026 08:01:01 Asia/Kolkata] === BATCH PROCESSING ===
+[25-Jan-2026 08:01:01 Asia/Kolkata] Schedule ID: 69
+[25-Jan-2026 08:01:01 Asia/Kolkata] Total Recipients: 3
+[25-Jan-2026 08:01:01 Asia/Kolkata] Batch Size: 50
+[25-Jan-2026 08:01:01 Asia/Kolkata] Current Offset: 2
+[25-Jan-2026 08:01:01 Asia/Kolkata] Processing: 2 to 3
+[25-Jan-2026 08:01:01 Asia/Kolkata] Remaining after this batch: 0
+[25-Jan-2026 08:01:01 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: GA00108
+[25-Jan-2026 08:01:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 08:01:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 08:01:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 08:01:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 08:01:01 Asia/Kolkata] Employee ID (userid): GA00108
+[25-Jan-2026 08:01:02 Asia/Kolkata] Stored procedure returned 651 rows
+[25-Jan-2026 08:01:03 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[25-Jan-2026 08:01:03 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[25-Jan-2026 08:01:03 Asia/Kolkata] Schedule 69: All 3 emails sent successfully!
+[25-Jan-2026 08:01:03 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[25-Jan-2026 08:01:03 Asia/Kolkata] Next send: 2026-01-26 08:00:00
+[25-Jan-2026 10:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[25-Jan-2026 10:00:01 Asia/Kolkata] Schedule ID: 64
+[25-Jan-2026 10:00:01 Asia/Kolkata] Total Recipients: 4
+[25-Jan-2026 10:00:01 Asia/Kolkata] Batch Size: 50
+[25-Jan-2026 10:00:01 Asia/Kolkata] Current Offset: 0
+[25-Jan-2026 10:00:01 Asia/Kolkata] Processing: 0 to 4
+[25-Jan-2026 10:00:01 Asia/Kolkata] Remaining after this batch: 0
+[25-Jan-2026 10:00:01 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: ADMIN
+[25-Jan-2026 10:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 10:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 10:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 10:00:02 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 10:00:17 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[25-Jan-2026 10:00:17 Asia/Kolkata] Processing email for: sandra@globalhealthcareresource.com with empid: GA00004
+[25-Jan-2026 10:00:17 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 10:00:17 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:17 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:17 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 10:00:17 Asia/Kolkata] Employee ID (userid): GA00004
+[25-Jan-2026 10:00:19 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 10:00:35 Asia/Kolkata] Email sent successfully to: sandra@globalhealthcareresource.com
+[25-Jan-2026 10:00:35 Asia/Kolkata] Processing email for: parker@globalhealthcareresource.com with empid: GA00106
+[25-Jan-2026 10:00:35 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 10:00:35 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:35 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:35 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 10:00:35 Asia/Kolkata] Employee ID (userid): GA00106
+[25-Jan-2026 10:00:36 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 10:00:53 Asia/Kolkata] Email sent successfully to: parker@globalhealthcareresource.com
+[25-Jan-2026 10:00:54 Asia/Kolkata] Processing email for: austin@globalhealthcareresource.com with empid: GA00135
+[25-Jan-2026 10:00:54 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 10:00:54 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:54 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 10:00:54 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 10:00:54 Asia/Kolkata] Employee ID (userid): GA00135
+[25-Jan-2026 10:00:54 Asia/Kolkata] Stored procedure returned 422 rows
+[25-Jan-2026 10:00:56 Asia/Kolkata] Email sent successfully to: austin@globalhealthcareresource.com
+[25-Jan-2026 10:00:57 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[25-Jan-2026 10:00:57 Asia/Kolkata] Schedule 64: All 4 emails sent successfully!
+[25-Jan-2026 10:00:57 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[25-Jan-2026 10:00:57 Asia/Kolkata] Next send: 2026-01-26 10:00:00
+[25-Jan-2026 16:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[25-Jan-2026 16:00:01 Asia/Kolkata] Schedule ID: 70
+[25-Jan-2026 16:00:01 Asia/Kolkata] Total Recipients: 9
+[25-Jan-2026 16:00:01 Asia/Kolkata] Batch Size: 50
+[25-Jan-2026 16:00:01 Asia/Kolkata] Current Offset: 0
+[25-Jan-2026 16:00:01 Asia/Kolkata] Processing: 0 to 9
+[25-Jan-2026 16:00:01 Asia/Kolkata] Remaining after this batch: 0
+[25-Jan-2026 16:00:01 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:01 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:01 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:01 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:04 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[25-Jan-2026 16:00:05 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:05 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:05 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:05 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:05 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:05 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:05 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:08 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[25-Jan-2026 16:00:09 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:09 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:09 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:09 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:09 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:09 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:09 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:11 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[25-Jan-2026 16:00:12 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:12 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:12 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:12 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:12 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:12 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:13 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:15 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[25-Jan-2026 16:00:15 Asia/Kolkata] Processing email for: codeguru70@gmail.com with empid: GA00106
+[25-Jan-2026 16:00:15 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:15 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:15 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:15 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:15 Asia/Kolkata] Employee ID (userid): GA00106
+[25-Jan-2026 16:00:16 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:18 Asia/Kolkata] Email sent successfully to: codeguru70@gmail.com
+[25-Jan-2026 16:00:18 Asia/Kolkata] Processing email for: g36656606@gmail.com with empid: GA00106
+[25-Jan-2026 16:00:18 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:18 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:18 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:18 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:18 Asia/Kolkata] Employee ID (userid): GA00106
+[25-Jan-2026 16:00:19 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:21 Asia/Kolkata] Email sent successfully to: g36656606@gmail.com
+[25-Jan-2026 16:00:22 Asia/Kolkata] Processing email for: softbeetechnology@gmail.com with empid: GA00106
+[25-Jan-2026 16:00:22 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:22 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:22 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:22 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:22 Asia/Kolkata] Employee ID (userid): GA00106
+[25-Jan-2026 16:00:22 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:25 Asia/Kolkata] Email sent successfully to: softbeetechnology@gmail.com
+[25-Jan-2026 16:00:25 Asia/Kolkata] Processing email for: sabaree643@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:25 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:25 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:25 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:25 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:25 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:26 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:28 Asia/Kolkata] Email sent successfully to: sabaree643@gmail.com
+[25-Jan-2026 16:00:28 Asia/Kolkata] Processing email for: chandruk254.ck@gmail.com with empid: ADMIN
+[25-Jan-2026 16:00:28 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 16:00:28 Asia/Kolkata] Input reportType: CEO_REPORT
+[25-Jan-2026 16:00:28 Asia/Kolkata] Converted spReportType: SUMMARY_REPORT
+[25-Jan-2026 16:00:28 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 16:00:28 Asia/Kolkata] Employee ID (userid): ADMIN
+[25-Jan-2026 16:00:29 Asia/Kolkata] Stored procedure returned 50381 rows
+[25-Jan-2026 16:00:31 Asia/Kolkata] Email sent successfully to: chandruk254.ck@gmail.com
+[25-Jan-2026 16:00:32 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[25-Jan-2026 16:00:32 Asia/Kolkata] Schedule 70: All 9 emails sent successfully!
+[25-Jan-2026 16:00:32 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[25-Jan-2026 16:00:32 Asia/Kolkata] Next send: 2026-01-26 16:00:00
+[25-Jan-2026 17:00:02 Asia/Kolkata] === BATCH PROCESSING ===
+[25-Jan-2026 17:00:02 Asia/Kolkata] Schedule ID: 68
+[25-Jan-2026 17:00:02 Asia/Kolkata] Total Recipients: 3
+[25-Jan-2026 17:00:02 Asia/Kolkata] Batch Size: 50
+[25-Jan-2026 17:00:02 Asia/Kolkata] Current Offset: 0
+[25-Jan-2026 17:00:02 Asia/Kolkata] Processing: 0 to 3
+[25-Jan-2026 17:00:02 Asia/Kolkata] Remaining after this batch: 0
+[25-Jan-2026 17:00:02 Asia/Kolkata] Processing email for: kiddenkitty70@gmail.com with empid: GA00108
+[25-Jan-2026 17:00:02 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 17:00:02 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:02 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:02 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 17:00:02 Asia/Kolkata] Employee ID (userid): GA00108
+[25-Jan-2026 17:00:02 Asia/Kolkata] Stored procedure returned 651 rows
+[25-Jan-2026 17:00:05 Asia/Kolkata] Email sent successfully to: kiddenkitty70@gmail.com
+[25-Jan-2026 17:00:05 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA01277
+[25-Jan-2026 17:00:05 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 17:00:05 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:05 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:05 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 17:00:05 Asia/Kolkata] Employee ID (userid): GA01277
+[25-Jan-2026 17:00:06 Asia/Kolkata] Stored procedure returned 306 rows
+[25-Jan-2026 17:00:08 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[25-Jan-2026 17:00:08 Asia/Kolkata] Processing email for: sabareeswaran.n26@gmail.com with empid: GA18348
+[25-Jan-2026 17:00:08 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[25-Jan-2026 17:00:08 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:08 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[25-Jan-2026 17:00:08 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-25
+[25-Jan-2026 17:00:08 Asia/Kolkata] Employee ID (userid): GA18348
+[25-Jan-2026 17:00:09 Asia/Kolkata] Stored procedure returned 16 rows
+[25-Jan-2026 17:00:10 Asia/Kolkata] Email sent successfully to: sabareeswaran.n26@gmail.com
+[25-Jan-2026 17:00:11 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[25-Jan-2026 17:00:11 Asia/Kolkata] Schedule 68: All 3 emails sent successfully!
+[25-Jan-2026 17:00:11 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[25-Jan-2026 17:00:11 Asia/Kolkata] Next send: 2026-01-26 17:00:00
+[26-Jan-2026 08:00:01 Asia/Kolkata] === BATCH PROCESSING ===
+[26-Jan-2026 08:00:01 Asia/Kolkata] Schedule ID: 69
+[26-Jan-2026 08:00:01 Asia/Kolkata] Total Recipients: 3
+[26-Jan-2026 08:00:01 Asia/Kolkata] Batch Size: 50
+[26-Jan-2026 08:00:01 Asia/Kolkata] Current Offset: 0
+[26-Jan-2026 08:00:01 Asia/Kolkata] Processing: 0 to 3
+[26-Jan-2026 08:00:01 Asia/Kolkata] Remaining after this batch: 0
+[26-Jan-2026 08:00:01 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: ADMIN
+[26-Jan-2026 08:00:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[26-Jan-2026 08:00:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-26
+[26-Jan-2026 08:00:01 Asia/Kolkata] Employee ID (userid): ADMIN
+[26-Jan-2026 08:00:02 Asia/Kolkata] Stored procedure returned 50740 rows
+[26-Jan-2026 08:00:18 Asia/Kolkata] Email sent successfully to: rajravik33@gmail.com
+[26-Jan-2026 08:00:18 Asia/Kolkata] Processing email for: rajravik33@gmail.com with empid: GA14366
+[26-Jan-2026 08:00:18 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[26-Jan-2026 08:00:18 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:18 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:18 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-26
+[26-Jan-2026 08:00:18 Asia/Kolkata] Employee ID (userid): GA14366
+[26-Jan-2026 08:00:19 Asia/Kolkata] Stored procedure returned 0 rows
+[26-Jan-2026 08:00:19 Asia/Kolkata] No data returned from stored procedure
+[26-Jan-2026 08:00:19 Asia/Kolkata] No data available for employee: GA14366
+[26-Jan-2026 08:00:19 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: GA00108
+[26-Jan-2026 08:00:19 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[26-Jan-2026 08:00:19 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:19 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[26-Jan-2026 08:00:19 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-26
+[26-Jan-2026 08:00:19 Asia/Kolkata] Employee ID (userid): GA00108
+[26-Jan-2026 08:00:20 Asia/Kolkata] Stored procedure returned 651 rows
+[26-Jan-2026 08:00:21 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[26-Jan-2026 08:00:22 Asia/Kolkata] === BATCH COMPLETE ===
+[26-Jan-2026 08:00:22 Asia/Kolkata] Schedule 69: Sent 2 emails in this batch
+[26-Jan-2026 08:00:22 Asia/Kolkata] Progress: 2 of 3 sent (1 remaining)
+[26-Jan-2026 08:00:22 Asia/Kolkata] Status: 'idle' - Will continue in next cron run
+[26-Jan-2026 08:01:01 Asia/Kolkata] === BATCH PROCESSING ===
+[26-Jan-2026 08:01:01 Asia/Kolkata] Schedule ID: 69
+[26-Jan-2026 08:01:01 Asia/Kolkata] Total Recipients: 3
+[26-Jan-2026 08:01:01 Asia/Kolkata] Batch Size: 50
+[26-Jan-2026 08:01:01 Asia/Kolkata] Current Offset: 2
+[26-Jan-2026 08:01:01 Asia/Kolkata] Processing: 2 to 3
+[26-Jan-2026 08:01:01 Asia/Kolkata] Remaining after this batch: 0
+[26-Jan-2026 08:01:01 Asia/Kolkata] Processing email for: sabareen6@gmail.com with empid: GA00108
+[26-Jan-2026 08:01:01 Asia/Kolkata] === STORED PROCEDURE CALL ===
+[26-Jan-2026 08:01:01 Asia/Kolkata] Input reportType: MONTHLY_EXPORT
+[26-Jan-2026 08:01:01 Asia/Kolkata] Converted spReportType: MONTHLY_EXPORT
+[26-Jan-2026 08:01:01 Asia/Kolkata] Dates: 2026-01-01 to 2026-01-26
+[26-Jan-2026 08:01:01 Asia/Kolkata] Employee ID (userid): GA00108
+[26-Jan-2026 08:01:01 Asia/Kolkata] Stored procedure returned 651 rows
+[26-Jan-2026 08:01:04 Asia/Kolkata] Email sent successfully to: sabareen6@gmail.com
+[26-Jan-2026 08:01:04 Asia/Kolkata] === ALL BATCHES COMPLETE ===
+[26-Jan-2026 08:01:04 Asia/Kolkata] Schedule 69: All 3 emails sent successfully!
+[26-Jan-2026 08:01:04 Asia/Kolkata] Status: 'idle', batch_offset reset to 0
+[26-Jan-2026 08:01:04 Asia/Kolkata] Next send: 2026-01-27 08:00:00
