@@ -41,8 +41,15 @@ if (!is_array($payload)) {
 }
 
 $message = trim((string)($payload['message'] ?? ''));
-$userid = trim((string)($payload['userid'] ?? 'ALL'));
-$accessRole = strtoupper(trim((string)($payload['access_role'] ?? 'EMPLOYEE')));
+$token = trim((string)($payload['token'] ?? ''));
+
+$stmt = $conn->prepare("SELECT EMPID, ACCESS_ROLE FROM EMP_DB WHERE token = ? LIMIT 1");
+$stmt->bind_param('s', $token);
+$stmt->execute();
+$row = $stmt->get_result()->fetch_assoc();
+$userid = $row['EMPID'];
+$accessRole = $row['ACCESS_ROLE'];
+
 $model = trim((string)($payload['model'] ?? envOrDefault('OLLAMA_MODEL', 'tinyllama:latest')));
 $allowLlm = filter_var($payload['allow_llm'] ?? envOrDefault('CHRONAI_ALLOW_LLM', 'false'), FILTER_VALIDATE_BOOLEAN);
 $dashboardContext = is_array($payload['dashboard_context'] ?? null) ? $payload['dashboard_context'] : null;

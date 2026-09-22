@@ -1,19 +1,24 @@
 <?php
 include 'apiMain.php';
 
+// Read JSON body first (RAG/API callers). Fall back to $_POST, then $_GET —
+// so any existing caller that used query strings or form POST keeps working unchanged.
+$json_input = json_decode(file_get_contents('php://input'), true);
+$input = is_array($json_input) ? $json_input : ($_POST ?: $_GET);
+
 // Get parameters with default values
-$endDate = isset($_GET['dateRange']['end']) ? $_GET['dateRange']['end'] : date('Y-m-d', strtotime('yesterday'));
-$startDate = isset($_GET['dateRange']['start']) ? $_GET['dateRange']['start'] : date('Y-m-d', strtotime('yesterday - 6 days'));
-$departments = isset($_GET['department']) ? $_GET['department'] : ['ALL'];
-$roles = isset($_GET['role']) ? $_GET['role'] : ['ALL'];
-$projects = isset($_GET['project']) ? $_GET['project'] : ['ALL'];
-$shifts = isset($_GET['shift']) ? $_GET['shift'] : ['ALL'];
-$teams = isset($_GET['team']) ? $_GET['team'] : ['ALL'];
-$ids = isset($_GET['ids']) ? $_GET['ids'] : ['ALL'];
-$names = isset($_GET['names']) ? $_GET['names'] : ['ALL'];
-$designations = isset($_GET['designations']) ? $_GET['designations'] : ['ALL'];
-$userid = isset($_GET['userid']) ? $_GET['userid'] : NULL;
-$reportType = isset($_GET['reportType']) ? $_GET['reportType'] : 'GROUP_REPORT'; // Default to GROUP_REPORT
+$endDate = isset($input['dateRange']['end']) ? $input['dateRange']['end'] : date('Y-m-d', strtotime('yesterday'));
+$startDate = isset($input['dateRange']['start']) ? $input['dateRange']['start'] : date('Y-m-d', strtotime('yesterday - 6 days'));
+$departments = isset($input['department']) ? (array)$input['department'] : ['ALL'];
+$roles = isset($input['role']) ? (array)$input['role'] : ['ALL'];
+$projects = isset($input['project']) ? (array)$input['project'] : ['ALL'];
+$shifts = isset($input['shift']) ? (array)$input['shift'] : ['ALL'];
+$teams = isset($input['team']) ? (array)$input['team'] : ['ALL'];
+$ids = isset($input['ids']) ? (array)$input['ids'] : ['ALL'];
+$names = isset($input['names']) ? (array)$input['names'] : ['ALL'];
+$designations = isset($input['designations']) ? (array)$input['designations'] : ['ALL'];
+$userid = isset($input['userid']) ? $input['userid'] : NULL;
+$reportType = isset($input['reportType']) ? $input['reportType'] : 'GROUP_REPORT'; // Default to GROUP_REPORT
 
 // Convert arrays to comma-separated strings for stored procedure parameters
 $departments = implode(",", array_map([$conn, 'real_escape_string'], $departments));
@@ -146,9 +151,24 @@ function formatSecondsToHMS($totalSeconds) {
 }
 
 // Get unique employee count
-$sql_count = "SELECT COUNT(DISTINCT EmpID) AS unique_empid_count FROM EMP_DB";
-$result = $conn->query($sql_count);
-$unique_empid_count = $result ? $result->fetch_assoc()['unique_empid_count'] : "Error: " . $conn->error;
+// Count unique employees from the actual filtered result set, not the whole table.
+// GROUP_REPORT / WEEKLY_EXPORT / MONTHLY_EXPORT return an EmpID column; other report
+// types don't, so fall back to the old table-wide count only when there's nothing to derive it from.
+$empIdColumn = null;
+foreach (['EmpID', 'EMPID', 'EMP_ID'] as $candidate) {
+    if (in_array($candidate, $columns ?? [], true)) {
+        $empIdColumn = $candidate;
+        break;
+    }
+}
+
+if ($empIdColumn !== null && !empty($data)) {
+    $unique_empid_count = count(array_unique(array_column($data, $empIdColumn)));
+} else {
+    $sql_count = "SELECT COUNT(DISTINCT EmpID) AS unique_empid_count FROM EMP_DB";
+    $result = $conn->query($sql_count);
+    $unique_empid_count = $result ? $result->fetch_assoc()['unique_empid_count'] : "Error: " . $conn->error;
+}
 
 // Function to fetch unique values for dropdowns
 function fetchUniqueValues($conn, $column) {

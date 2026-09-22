@@ -11,6 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
+// $servername = "pmsglobal.cel8gekqgbno.us-east-1.rds.amazonaws.com";
+// $username = "admin";
+// $password = "wfxicVdxG71bjvdVhFN3";
+// $dbname = "PMS_PRO";
+
 $servername = "localhost";
 $username   = "root";
 $password   = "Sanjaykumar@7";

@@ -79,10 +79,11 @@ SELECT e.*, s.SHIFTTYPE
 FROM EMP_DB e
 LEFT JOIN TBL_SHIFT s ON e.EMPID = s.EMPID
 WHERE 
-    (EXISTS (SELECT 1 FROM EMP_DB WHERE EMPID = ? AND UPPER(ACCESS_ROLE) = UPPER('ADMIN'))) 
+    (EXISTS (SELECT 1 FROM EMP_DB WHERE EMPID = ? AND UPPER(ACCESS_ROLE) IN (UPPER('ADMIN'), UPPER('SUPER_ADMIN'), UPPER('EXECUTIVE'))))
     OR 
-    (e.EMPID IN (SELECT EMPID FROM employee_hierarchy) OR e.EMPID = ?);
-            ";
+    (e.EMPID IN (SELECT EMPID FROM employee_hierarchy) OR e.EMPID = ?)
+    AND e.ACTIVE_YN = 'Y';
+        ";
 
             $stmt = $conn->prepare($query);
             $stmt->bind_param("sss", $EMPID, $EMPID, $EMPID);

@@ -484,7 +484,7 @@ try {
         $leaveStmt->close();
     }
 
-    // -- HRMS roster (scoped by EMP_STATUS(userid)) ----------------------------
+   // -- HRMS roster (scoped by EMP_STATUS(userid)) ----------------------------
     $hrmsUsers  = $roleExempt = $noAccess = 0;
     $hrmsEmpIds = [];
     $empRes = $conn->query("SELECT EMPID, ROLE, SYS_USER_NAME, ACTIVE_YN FROM EMP_DB");
@@ -492,6 +492,14 @@ try {
         while ($row = $empRes->fetch_assoc()) {
             $empId = normalizeEmpId($row['EMPID'] ?? '');
             if ($empId === '') continue;
+
+            $sysUserName = trim($row['SYS_USER_NAME'] ?? '');
+            $isActiveYn  = strtoupper(trim($row['ACTIVE_YN'] ?? 'Y')) === 'Y';
+
+            // No-access check must run BEFORE the EMP_STATUS scope filter,
+            // since EMP_STATUS is keyed by SYS_USER_NAME and will never 
+            // return a row for someone who has no SYS_USER_NAME at all.
+            if ($isActiveYn && $sysUserName === '') $noAccess++;
 
             if (!empty($empStatusEmpIds) && !isset($empStatusEmpIds[$empId])) {
                 continue;
@@ -501,7 +509,6 @@ try {
             $hrmsEmpIds[$empId] = true;
             $role = strtoupper(trim($row['ROLE'] ?? ''));
             if ($role === 'ADMIN' || $role === 'LEADERSHIP') $roleExempt++;
-            if (strtoupper(trim($row['ACTIVE_YN'] ?? 'Y')) === 'Y' && trim($row['SYS_USER_NAME'] ?? '') === '') $noAccess++;
         }
         $empRes->free();
     }

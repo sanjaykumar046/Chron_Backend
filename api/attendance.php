@@ -17,21 +17,33 @@ class AttendanceAPI {
         exit;
     }
     
-    public function getAttendance($data) {
-        $startDate = $data['startDate'] ?? date('Y-m-d');
-        $endDate = $data['endDate'] ?? date('Y-m-d');
-        $userId = $data['userId'] ?? 'ALL';
-        $role = $data['role'] ?? 'EXECUTIVE';
-        
-        try {
-            $sql = "CALL PR_GET_ATTENDANCE_REPORT(?, ?, 'ALL', 'ALL', 'ALL', 'ALL', 'ALL', ?)";
-            
-            $stmt = $this->conn->prepare($sql);
-            if (!$stmt) {
-                $this->sendResponse(false, 'Failed to prepare statement: ' . $this->conn->error);
-            }
-            
-            $stmt->bind_param('sss', $startDate, $endDate, $userId);
+   public function getAttendance($data) {
+    $startDate = $data['startDate'] ?? date('Y-m-d');
+    $endDate = $data['endDate'] ?? date('Y-m-d');
+    $userId = $data['userId'] ?? 'ALL';
+    $role = $data['role'] ?? 'EXECUTIVE';
+
+    // Admin/Leadership/Executive should see ALL employees, not just their own EMPID
+    $empIdParam = in_array($role, ['ADMIN', 'LEADERSHIP', 'EXECUTIVE']) ? 'ALL' : $userId;
+    
+    try {
+       $sql = "CALL PR_GET_ATTENDANCE_REPORT(
+    ?, ?, ?, 'ALL', 'ALL', 'ALL', 'ALL', ?
+);";
+
+$stmt = $this->conn->prepare($sql);
+
+if (!$stmt) {
+    $this->sendResponse(false, 'Failed to prepare statement: ' . $this->conn->error);
+}
+
+$stmt->bind_param(
+    'ssss',
+    $startDate,
+    $endDate,
+    $empIdParam,   // P_EMPID
+    $userId        // P_USER_ID
+);
             
             if (!$stmt->execute()) {
                 $this->sendResponse(false, 'Failed to execute query: ' . $stmt->error);

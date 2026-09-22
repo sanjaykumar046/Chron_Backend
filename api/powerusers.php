@@ -21,19 +21,32 @@ $response = [
     'exceededBreakTime' => []
 ];
 
+// Maps the SP's Category value to the response key it belongs in
+$categoryMap = [
+    'TOP_PRODUCTIVE_USERS'    => 'topProductiveUsers',
+    'BOTTOM_PRODUCTIVE_USERS' => 'bottomProductiveUsers',
+    'TOP_BREAK_USERS'         => 'exceededBreakTime',
+];
+
 $sql = "CALL PR_EMPLOYEE_ACTIVITY_TOP_BTM('$startDate','$endDate','$empid','$empnames','$department','$role','$designations','$project','$shift','$team','$userid')";
 
 if ($conn->multi_query($sql)) {
-    $keys = ['topProductiveUsers', 'bottomProductiveUsers', 'topProductiveMinutes', 'bottomProductiveMinutes', 'exceededBreakTime'];
-    $i = 0;
-
     do {
         if ($result = $conn->store_result()) {
-            $response[$keys[$i]] = $result->fetch_all(MYSQLI_ASSOC);
+            $rows = $result->fetch_all(MYSQLI_ASSOC);
             $result->free();
-            $i++;
+
+            foreach ($rows as $row) {
+                $category = $row['Category'] ?? null;
+                if ($category && isset($categoryMap[$category])) {
+                    $response[$categoryMap[$category]][] = $row;
+                }
+            }
         }
     } while ($conn->more_results() && $conn->next_result());
+} else {
+    $response['error'] = true;
+    $response['message'] = $conn->error;
 }
 
 $conn->close();
