@@ -17,6 +17,10 @@ $teams = isset($input['team']) ? (array)$input['team'] : ['ALL'];
 $ids = isset($input['ids']) ? (array)$input['ids'] : ['ALL'];
 $names = isset($input['names']) ? (array)$input['names'] : ['ALL'];
 $designations = isset($input['designations']) ? (array)$input['designations'] : ['ALL'];
+$workMode = isset($input['work_mode']) ? strtoupper(trim((string)$input['work_mode'])) : 'ALL';
+if (!in_array($workMode, ['ALL', 'WFO', 'WFH'], true)) {
+    $workMode = 'ALL';
+}
 $userid = isset($input['userid']) ? $input['userid'] : NULL;
 $reportType = isset($input['reportType']) ? $input['reportType'] : 'GROUP_REPORT'; // Default to GROUP_REPORT
 
@@ -35,8 +39,8 @@ $aggregate_data_by_date = [];
 $recordCount = 0;
 
 // Prepare and execute stored procedure with new parameter
-if ($stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
-    $stmt->bind_param('ssssssssssss', $startDate, $endDate, $ids, $names, $departments, $roles, $designations, $projects, $shifts, $teams, $userid, $reportType);
+if ($stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT_1(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
+    $stmt->bind_param('sssssssssssss', $startDate, $endDate, $ids, $names, $departments, $roles, $designations, $projects, $shifts, $teams, $workMode, $userid, $reportType);
     if (!$stmt->execute()) {
         http_response_code(500);
         die(json_encode([
@@ -211,6 +215,7 @@ $response = [
         'ids' => $ids !== 'ALL' ? explode(',', $ids) : null,
         'names' => $names !== 'ALL' ? explode(',', $names) : null,
         'designations' => $designations !== 'ALL' ? explode(',', $designations) : null,
+        'work_mode' => $workMode,
         'reportType' => $reportType
     ],
     'columns' => $columns,

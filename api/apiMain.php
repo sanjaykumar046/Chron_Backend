@@ -20,16 +20,15 @@ header("Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Content-Type: application/json");
 
+$servername = "pmsglobal.cel8gekqgbno.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "wfxicVdxG71bjvdVhFN3";
+$dbname = "PMS_PRO";
 
-// $servername = "pmsglobal.cel8gekqgbno.us-east-1.rds.amazonaws.com";
-// $username = "admin";
-// $password = "wfxicVdxG71bjvdVhFN3";
-// $dbname = "PMS_PRO";
-
-$servername = "localhost";
-$username   = "root";
-$password   = "Sanjaykumar@7";
-$dbname     = "prod_ent1_tenant_0_demo";
+// $servername = "localhost";
+// $username   = "root";
+// $password   = "Sanjaykumar@7";
+// $dbname     = "prod_ent1_tenant_0_demo";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

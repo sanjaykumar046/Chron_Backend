@@ -16,6 +16,10 @@ $teams = isset($inputData['selectedTeams']) ? $inputData['selectedTeams'] : ['AL
 $ids = isset($inputData['ids']) ? $inputData['ids'] : ['ALL'];
 $names = isset($inputData['names']) ? $inputData['names'] : ['ALL'];
 $designations = isset($inputData['designations']) ? $inputData['designations'] : ['ALL'];
+$workMode = isset($inputData['work_mode']) ? strtoupper(trim((string)$inputData['work_mode'])) : 'ALL';
+if (!in_array($workMode, ['ALL', 'WFO', 'WFH'], true)) {
+    $workMode = 'ALL';
+}
 $userid = isset($inputData['EMPID']) ? $inputData['EMPID'] : NULL;
 $reportType = isset($inputData['reportType']) ? $inputData['reportType'] : 'GROUP_REPORT'; // Default to GROUP_REPORT
 
@@ -33,38 +37,69 @@ $designations = implode(",", array_map([$conn, 'real_escape_string'], $designati
 $aggregate_data = [];
 $recordCount = 0;
 
-// Prepare and execute stored procedure with new procedure name and report type
-if ($stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
-    $stmt->bind_param('ssssssssssss', $startDate, $endDate, $ids, $names, $departments, $roles, $designations, $projects, $shifts, $teams, $userid, $reportType);
-    $stmt->execute();
-    
-    // Fetch results
-    $result = $stmt->get_result();
-    while ($row = $result->fetch_assoc()) {
-        // Collect only the required fields
-        $aggregate_data[] = [
-            'EmpID' => $row['EmpID'],
-            'EmpName' => $row['EmpName'],
-            'Departments' => $row['Department'],
-            'Projects' => $row['Project'],
-            'Team' => $row['Team'],
-            'Shifts' => $row['SHIFT'],
-            'TotalLoggedHours' => $row['TotalLoggedHours'],
-            'TotalIdleHours' => $row['TotalIdleHours'],
-            'TotalProductiveHours' => $row['TotalProductiveHours'],
-            'TOTAL_ON_SYSTEM' => $row['TOTAL_ON_SYSTEM'],
-            'AwayFromSystem' => $row['AwayFromSystem']
-        ];
-        $recordCount++;
-    }
-    
-    // Free result and close statement
-    $result->free();
-    $stmt->close();
-} else {
+// PR_EMPLOYEE_ACTIVITY_FLAT expects 13 inputs, including P_WORK_MODE.
+$stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+if (!$stmt) {
+    http_response_code(500);
     echo json_encode(['error' => 'Failed to prepare statement: ' . $conn->error]);
     $conn->close();
     exit;
+}
+
+$stmt->bind_param(
+    'sssssssssssss',
+    $startDate,
+    $endDate,
+    $ids,
+    $names,
+    $departments,
+    $roles,
+    $designations,
+    $projects,
+    $shifts,
+    $teams,
+    $workMode,
+    $userid,
+    $reportType
+);
+
+if (!$stmt->execute()) {
+    http_response_code(500);
+    $error = $stmt->error;
+    $stmt->close();
+    echo json_encode(['error' => 'Procedure execution failed: ' . $error]);
+    $conn->close();
+    exit;
+}
+
+$result = $stmt->get_result();
+if ($result) {
+    while ($row = $result->fetch_assoc()) {
+        // Collect only the required fields.
+        $aggregate_data[] = [
+            'EmpID' => $row['EmpID'] ?? null,
+            'EmpName' => $row['EmpName'] ?? null,
+            'Departments' => $row['Department'] ?? null,
+            'Projects' => $row['Project'] ?? null,
+            'Team' => $row['Team'] ?? null,
+            'Shifts' => $row['SHIFT'] ?? null,
+            'TotalLoggedHours' => $row['TotalLoggedHours'] ?? '00:00:00',
+            'TotalIdleHours' => $row['TotalIdleHours'] ?? '00:00:00',
+            'TotalProductiveHours' => $row['TotalProductiveHours'] ?? '00:00:00',
+            'TOTAL_ON_SYSTEM' => $row['TOTAL_ON_SYSTEM'] ?? '00:00:00',
+            'AwayFromSystem' => $row['AwayFromSystem'] ?? '00:00:00'
+        ];
+        $recordCount++;
+    }
+    $result->free();
+}
+
+$stmt->close();
+while ($conn->more_results() && $conn->next_result()) {
+    $extra = $conn->use_result();
+    if ($extra instanceof mysqli_result) {
+        $extra->free();
+    }
 }
 
 // Close connection
@@ -83,7 +118,8 @@ echo json_encode([
         'designations' => $designations,
         'projects' => $projects,
         'shifts' => $shifts,
-        'teams' => $teams
+        'teams' => $teams,
+        'workMode' => $workMode
     ]
 ]);
 ?>

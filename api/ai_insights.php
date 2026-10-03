@@ -1,4 +1,16 @@
 <?php
+// Endpoint-level CORS runs before the DB include, so DB failures also retain CORS.
+header('Access-Control-Allow-Origin: *');
+header('Vary: Origin');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+header('Access-Control-Max-Age: 86400');
+
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
+
 include 'apiMain.php';
 
 date_default_timezone_set('Asia/Kolkata');
@@ -172,7 +184,7 @@ function formatHourLabel($hour) {
 
 function fetchActivityFlat($conn, $startDate, $endDate, $filters) {
     $rows = [];
-    $stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     if (!$stmt) return $rows;
     $ids          = listToCsv($conn, $filters['ids']          ?? 'ALL');
     $names        = listToCsv($conn, $filters['names']        ?? 'ALL');
@@ -182,13 +194,15 @@ function fetchActivityFlat($conn, $startDate, $endDate, $filters) {
     $projects     = listToCsv($conn, $filters['project']      ?? 'ALL');
     $shifts       = listToCsv($conn, $filters['shift']        ?? 'ALL');
     $teams        = listToCsv($conn, $filters['team']         ?? 'ALL');
+    $workMode     = strtoupper(trim((string)($filters['work_mode'] ?? 'ALL')));
+    if (!in_array($workMode, ['ALL', 'WFO', 'WFH'], true)) $workMode = 'ALL';
     $userid       = $filters['userid']     ?? 'ALL';
     $reportType   = $filters['reportType'] ?? 'MONTHLY_EXPORT';
     $stmt->bind_param(
-        'ssssssssssss',
+        'sssssssssssss',
         $startDate, $endDate,
         $ids, $names, $departments, $roles, $designations,
-        $projects, $shifts, $teams, $userid, $reportType
+        $projects, $shifts, $teams, $workMode, $userid, $reportType
     );
     if ($stmt->execute()) {
         $result = $stmt->get_result();
@@ -282,6 +296,7 @@ try {
         'ids'          => getParam('ids',          'ALL'),
         'names'        => getParam('names',        'ALL'),
         'designations' => getParam('designations', 'ALL'),
+        'work_mode'    => getParam('work_mode', 'ALL'),
         'userid'       => $userid,
         'reportType'   => $reportType,
     ];

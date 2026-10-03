@@ -77,28 +77,57 @@ $idsCsv = arrayToCsv($ids, $conn);
 $namesCsv = arrayToCsv($names, $conn);
 $designationsCsv = arrayToCsv($designations, $conn);
 
-function getAggregateByDate($conn, $startDate, $endDate, $idsCsv, $namesCsv, $departmentsCsv, $rolesCsv, $designationsCsv, $projectsCsv, $shiftsCsv, $teamsCsv, $userid, $reportType) {
-    if ($stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
-        $stmt->bind_param('ssssssssssss', $startDate, $endDate, $idsCsv, $namesCsv, $departmentsCsv, $rolesCsv, $designationsCsv, $projectsCsv, $shiftsCsv, $teamsCsv, $userid, $reportType);
-        
-        $stmt->execute();
-        
-        $result = $stmt->get_result();
-        $data = $result ? $result->fetch_all(MYSQLI_ASSOC) : [];
-        
-        $columns = [];
-        $fieldInfo = $result->fetch_fields();
-        foreach ($fieldInfo as $field) {
+function getAggregateByDate($conn, $startDate, $endDate, $idsCsv, $namesCsv, $departmentsCsv, $rolesCsv, $designationsCsv, $projectsCsv, $shiftsCsv, $teamsCsv, $workMode, $userid, $reportType) {
+    $stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY_FLAT(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    if (!$stmt) {
+        return ['error' => 'Failed to prepare the statement: ' . $conn->error];
+    }
+
+    $stmt->bind_param(
+        'sssssssssssss',
+        $startDate,
+        $endDate,
+        $idsCsv,
+        $namesCsv,
+        $departmentsCsv,
+        $rolesCsv,
+        $designationsCsv,
+        $projectsCsv,
+        $shiftsCsv,
+        $teamsCsv,
+        $workMode,
+        $userid,
+        $reportType
+    );
+
+    if (!$stmt->execute()) {
+        $error = $stmt->error;
+        $stmt->close();
+        return ['error' => 'Failed to execute procedure: ' . $error];
+    }
+
+    $result = $stmt->get_result();
+    $data = [];
+    $columns = [];
+
+    if ($result) {
+        foreach ($result->fetch_fields() as $field) {
             $columns[] = $field->name;
         }
-        
-        $stmt->close();
-        
-        return ['data' => $data, 'columns' => $columns];
-        
-    } else {
-        return ['error' => 'Failed to prepare the statement'];
+        $data = $result->fetch_all(MYSQLI_ASSOC);
+        $result->free();
     }
+
+    $stmt->close();
+
+    while ($conn->more_results() && $conn->next_result()) {
+        $extra = $conn->use_result();
+        if ($extra instanceof mysqli_result) {
+            $extra->free();
+        }
+    }
+
+    return ['data' => $data, 'columns' => $columns];
 }
 
 function addTimes($time1, $time2) {
@@ -138,7 +167,16 @@ function fetchUniqueValues($conn, $column) {
     return $values;
 }
 
-$result = getAggregateByDate($conn, $startDate, $endDate, $idsCsv, $namesCsv, $departmentsCsv, $rolesCsv, $designationsCsv, $projectsCsv, $shiftsCsv, $teamsCsv, $userid, $procedureReportType);
+$result = getAggregateByDate($conn, $startDate, $endDate, $idsCsv, $namesCsv, $departmentsCsv, $rolesCsv, $designationsCsv, $projectsCsv, $shiftsCsv, $teamsCsv, 'ALL', $userid, $procedureReportType);
+
+if (isset($result['error'])) {
+    http_response_code(500);
+    header('Content-Type: application/json');
+    echo json_encode(['error' => $result['error']]);
+    $conn->close();
+    exit;
+}
+
 $aggregateData = $result['data'];
 $columns = $result['columns'];
 

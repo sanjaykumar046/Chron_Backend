@@ -4,26 +4,9 @@ header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header('Content-Type: application/json');
 
+include 'apiMain.php';
+
 try {
-    // Database connection parameters
-    // $servername = "chron-db.cd6wkwiowv2u.ap-southeast-2.rds.amazonaws.com";
-    // $username = "admin";
-    // $password = "wfxicVdxG71bjvdVhFN3";
-    // $dbname = "prod_ent1_tenant_0_demo";
-
-    $servername = "localhost";
-$username = "root";
-$password = "Sanjaykumar@7";
-$dbname = "prod_ent1_tenant_0_demo";
-
-    // Create a connection
-    $conn = new mysqli($host, $username, $password, $dbname);
-
-    // Check connection
-    if ($conn->connect_error) {
-        throw new Exception("Connection failed: " . $conn->connect_error);
-    }
-
     // Prepare the SQL statement
     $stmt = $conn->prepare("CALL PR_EMPLOYEE_ACTIVITY(?, ?, ?, ?, ?, ?, ?)");
     if (!$stmt) {

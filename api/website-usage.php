@@ -9,23 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 
-// $servername = "pmsglobal.cel8gekqgbno.us-east-1.rds.amazonaws.com";
-// $username = "admin";
-// $password = "wfxicVdxG71bjvdVhFN3";
-// $dbname = "PMS_PRO";
-
-$servername = "localhost";
-$username = "root";
-$password = "Sanjaykumar@7";
-$dbname = "prod_ent1_tenant_0_demo";
+include 'apiMain.php';
 
 try {
-    // Create mysqli connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        throw new Exception('Connection failed: ' . $conn->connect_error);
-    }
-
     // Get parameters from request - 8 parameters matching your procedure
     $startDate = $_GET['startDate'] ?? 'ALL';
     $endDate = $_GET['endDate'] ?? 'ALL';

@@ -10,16 +10,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Database connection
-// $host = 'chron-db.cd6wkwiowv2u.ap-southeast-2.rds.amazonaws.com';
-// $dbname = 'prod_ent1_master';
-// $username = 'admin';
-// $password = 'wfxicVdxG71bjvdVhFN3';
+$host = 'chron-db.cd6wkwiowv2u.ap-southeast-2.rds.amazonaws.com';
+$dbname = 'prod_ent1_master';
+$username = 'admin';
+$password = 'wfxicVdxG71bjvdVhFN3';
 
 
-$servername = "localhost";
-$username = "root";
-$password = "Sanjaykumar@7";
-$dbname = "prod_ent1_tenant_0_demo";
+// $servername = "localhost";
+// $username = "root";
+// $password = "Sanjaykumar@7";
+// $dbname = "prod_ent1_tenant_0_demo";
 // CHANGE THIS TO YOUR OWN SECURE 32-CHARACTER KEY
 $ENCRYPTION_KEY = '.!F1a*(c51chVo,^$�!OW-T�_0GJr};r';
 

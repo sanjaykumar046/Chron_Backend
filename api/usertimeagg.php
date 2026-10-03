@@ -1,75 +1,74 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header('Content-Type: application/json'); // Set the content type to JSON
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header('Content-Type: application/json');
 
-try {
-    // Database connection parameters
-    // $host = "chron-db.cd6wkwiowv2u.ap-southeast-2.rds.amazonaws.com";
-    // $dbname = "prod_ent1_tenant_0_demo";
-    // $username = "admin";
-    // $password = "wfxicVdxG71bjvdVhFN3";
-
-    $servername = "localhost";
-$username = "root";
-$password = "Sanjaykumar@7";
-$dbname = "prod_ent1_tenant_0_demo";
-
-    // Define the DSN (Data Source Name)
-    $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
-
-    // Create a PDO instance
-    $pdo = new PDO($dsn, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Prepare the SQL statement
-    $stmt = $pdo->prepare("CALL PR_USER_TIMELINE_AGG_EX(:date, :empid, :empname, :team, :role, :department, :project, :userId)");
-
-    // Bind the parameters
-    $stmt->bindParam(':date', $date);
-    $stmt->bindParam(':empid', $empid);
-    $stmt->bindParam(':empname', $empname);
-    $stmt->bindParam(':team', $team);
-    $stmt->bindParam(':role', $role);
-    $stmt->bindParam(':department', $department);
-    $stmt->bindParam(':project', $project);
-    $stmt->bindParam(':userId', $userId);
-   
-
-    // Retrieve data from the POST request
-    $inputData = file_get_contents('php://input');
-    parse_str($inputData, $parsedData);
-
-    // Set filter parameters from incoming request, default to 'ALL' if not set
-    $date = isset($parsedData['date']) ? $parsedData['date'] :date('Y-m-d');;
-    $empid = isset($parsedData['EMPID']) ? $parsedData['EMPID'] : 'ALL';
-    $empname = isset($parsedData['EMPNAME']) ? $parsedData['EMPNAME'] : 'ALL';
-    $team = isset($parsedData['TEAM']) ? $parsedData['TEAM'] : 'ALL';
-    $role = isset($parsedData['ROLE']) ? $parsedData['ROLE'] : 'ALL';
-    $department = isset($parsedData['DEPARTMENT']) ? $parsedData['DEPARTMENT'] : 'ALL';
-    $project = isset($parsedData['PROJECT']) ? $parsedData['PROJECT'] : 'ALL';
-    $userId = isset($parsedData['userid']) ? $parsedData['userid'] : 'ALL';
-
-
-    // Execute the statement
-    $stmt->execute();
-
-    // Fetch the data
-    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    // Output the results in JSON format
-    if (empty($results)) {
-        echo json_encode(["message" => "No data found."]);
-    } else {
-        echo json_encode($results, JSON_PRETTY_PRINT);
-    }
-
-} catch (PDOException $e) {
-    // Output error in JSON format
-    echo json_encode(["error" => $e->getMessage()]);
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'OPTIONS') {
+    http_response_code(204);
+    exit;
 }
 
-// Close the connection
-$pdo = null;
+include 'apiMain.php';
+
+$inputData = file_get_contents('php://input');
+parse_str($inputData, $parsedData);
+
+$date = $parsedData['date'] ?? date('Y-m-d');
+$empid = $parsedData['EMPID'] ?? 'ALL';
+$empname = $parsedData['EMPNAME'] ?? 'ALL';
+$team = $parsedData['TEAM'] ?? 'ALL';
+$role = $parsedData['ROLE'] ?? 'ALL';
+$department = $parsedData['DEPARTMENT'] ?? 'ALL';
+$project = $parsedData['PROJECT'] ?? 'ALL';
+$userId = $parsedData['userid'] ?? 'ALL';
+
+try {
+    $stmt = $conn->prepare(
+        'CALL PR_USER_TIMELINE_AGG(?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+    if (!$stmt) {
+        throw new RuntimeException('Could not prepare timeline query: ' . $conn->error);
+    }
+
+    $stmt->bind_param(
+        'ssssssss',
+        $date,
+        $empid,
+        $empname,
+        $team,
+        $role,
+        $department,
+        $project,
+        $userId
+    );
+
+    if (!$stmt->execute()) {
+        throw new RuntimeException('Could not execute timeline query: ' . $stmt->error);
+    }
+
+    $result = $stmt->get_result();
+    $rows = $result ? $result->fetch_all(MYSQLI_ASSOC) : [];
+    if ($result) $result->free();
+    $stmt->close();
+
+    while ($conn->more_results()) {
+        if (!$conn->next_result()) break;
+        $extra = $conn->use_result();
+        if ($extra instanceof mysqli_result) $extra->free();
+    }
+
+    if (empty($rows)) {
+        echo json_encode(['message' => 'No data found.']);
+    } else {
+        echo json_encode($rows, JSON_PRETTY_PRINT);
+    }
+} catch (Throwable $error) {
+    http_response_code(500);
+    echo json_encode(['error' => $error->getMessage()]);
+} finally {
+    if (isset($conn) && $conn instanceof mysqli) {
+        $conn->close();
+    }
+}
 ?>

@@ -1,13 +1,21 @@
 <?php
+// Endpoint-level CORS runs before the DB include, so DB failures retain CORS.
+header('Access-Control-Allow-Origin: *');
+header('Vary: Origin');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+header('Access-Control-Max-Age: 86400');
+
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
+
 include 'apiMain.php';
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
-
-if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'OPTIONS') {
-    exit(0);
-}
 
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
@@ -34,30 +42,6 @@ function alertsTableExists($conn) {
     return $exists;
 }
 
-function buildScopeClause($conn, $accessRole, $empid) {
-    switch ($accessRole) {
-        case 'CEO':
-            return "SCOPE IN ('ALL', 'CEO')";
-
-        case 'MANAGER':
-            return "SCOPE IN ('ALL', 'MANAGER', 'CEO')";
-
-        case 'TEAM_LEADER':
-            return "SCOPE IN ('ALL', 'TEAM_LEADER', 'MANAGER', 'CEO')";
-
-        case 'EMPLOYEE':
-            $empScopeKey = $empid !== 'ALL' ? "EMPLOYEE:{$empid}" : '';
-            if ($empScopeKey !== '') {
-                $escapedScope = $conn->real_escape_string($empScopeKey);
-                return "(SCOPE = 'ALL' OR SCOPE = '{$escapedScope}')";
-            }
-            return "SCOPE = 'ALL'";
-
-        default:
-            return "SCOPE = 'ALL'";
-    }
-}
-
 function sendSse($event, $payload) {
     echo "event: {$event}\n";
     echo 'data: ' . json_encode($payload) . "\n\n";
@@ -66,7 +50,7 @@ function sendSse($event, $payload) {
 }
 
 $limit = isset($_GET['limit']) ? max(1, min(100, (int)$_GET['limit'])) : 20;
-$empid = isset($_GET['empid']) ? trim($_GET['empid']) : 'ALL';
+$empid = isset($_GET['empid']) ? trim($_GET['empid']) : '';
 $accessRole = normalizeAccessRole($_GET['access_role'] ?? 'ALL');
 
 sendSse('hello', [
@@ -85,10 +69,13 @@ if (!alertsTableExists($conn)) {
     exit;
 }
 
-$scopeClause = buildScopeClause($conn, $accessRole, $empid);
+$hasRecipient = $empid !== '' && strtoupper($empid) !== 'ALL';
+$scopeClause = $hasRecipient
+    ? "SCOPE = 'REPORTING_1:" . $conn->real_escape_string($empid) . "'"
+    : '1 = 0';
 $sql = "SELECT ID, LEVEL, TITLE, MESSAGE, SCOPE, SOURCE, META, CREATED_AT
         FROM ALERTS_RT
-        WHERE ({$scopeClause})
+        WHERE {$scopeClause}
         ORDER BY CREATED_AT DESC, ID DESC
         LIMIT {$limit}";
 
